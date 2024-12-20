@@ -1,0 +1,30 @@
+.field select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.field select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.field label {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    pointer-events: none;
+    color: #999;
+    transition: 0.2s;
+}
+
+.field select:focus + label, .field select:valid + label {
+    top: -0.5rem;
+    font-size: 0.8rem;
+    color: #333;
+}
